@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkyDome</title>
+<style>
+          @font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('./Montserrat-SemiBold.ttf') format('truetype');
+  }
+  body {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+  }
+  .gradient-background {
+    height: 98vh;
+    width: 99vw;
+    background: radial-gradient(at left bottom, #005089, #000000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .center-image {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px; 
+  }
+  .description-text {
+    margin-bottom: 20px; 
+    color: #fff;
+    text-align: center;
+    padding: 0 20px; 
+  }
+  .redirect-button {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .privacy-policy {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+<div class="gradient-background">
+    <a href="#privacy-policy" class="privacy-policy" onclick="window.location.href='https://alfredar8.github.io/SkyDome/SkyDome_PrivacyPolicy.html';">Privacy Policy</a> <!-- Privacy Policy Button -->
+  <img src="./SkydomeIcon.png" alt="SkyDome Icon" class="center-image">
+  <div class="description-text">
+    With a simple scan of your surroundings, our app detects your room’s ceiling and replaces it with captivating skies. Imagine gazing up at a star-studded night or a day sky adorned with fluffy clouds, all from the comfort of your own space. Whether you’re unwinding after a long day, working on your next masterpiece, or simply daydreaming, Sky Dome transports you beyond four walls. You can even customize your sky by uploading your own 360° image, making it uniquely yours.
+  </div>
+  <button class="redirect-button" onclick="window.location.href='https://www.meta.com/experiences/25678915115041096/';">Download</button>
+</div>
+<script>
+</script>
+</body>
+</html>
