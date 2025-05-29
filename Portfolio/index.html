@@ -10,17 +10,30 @@
       margin-top: 20vh;
       color: #333;
     }
+    #countdown {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #007acc;
+    }
   </style>
   <script>
-    // Redirect after 3 seconds (3000 milliseconds)
-    setTimeout(function() {
-      window.location.href = "https://www.AlfredoAR.com";
-    }, 3000);
+    let seconds = 3;
+    function updateCountdown() {
+      const countdownEl = document.getElementById('countdown');
+      countdownEl.textContent = seconds;
+      if (seconds === 0) {
+        window.location.href = "https://newdomain.com";
+      } else {
+        seconds--;
+        setTimeout(updateCountdown, 1000);
+      }
+    }
+    window.onload = updateCountdown;
   </script>
 </head>
 <body>
   <h1>Portfolio Moved</h1>
-  <p>The portfolio has been moved to a new domain. Please wait 3 seconds while you are redirected.</p>
-  <p>If you are not redirected automatically, <a href="https://www.AlfredoAR.com">click here</a>.</p>
+  <p>The portfolio has been moved to a new domain. Please wait <span id="countdown">3</span> seconds while you are redirected.</p>
+  <p>If you are not redirected automatically, <a href="https://newdomain.com">click here</a>.</p>
 </body>
 </html>
